@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_id"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="acquire id image"/>
+
+        <RadioButton
+            android:id="@+id/radio_income_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Income Documentation" />
+
+        <RadioButton
+            android:id="@+id/radio_asset_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Asset Documentation" />
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_doc"
+            android:layout_marginTop="15dp"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="documentation image"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

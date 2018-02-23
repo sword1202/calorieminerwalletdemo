@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:background="#0000"
+    android:scrollbars="vertical">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:background="#0000">
+
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#2ea565"
+            android:textSize="20sp"
+            android:text="@string/calibration">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/name_textView"
+            android:id="@+id/pictureLayout">
+
+            <com.calorieminer.minerapp.VisionPackage.GraphicOverlayView
+                android:layout_width="240dp"
+                android:layout_height="320dp"
+                android:id="@+id/imageView_opencv"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pictureLayout"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dip"
+                android:layout_marginEnd="5dip"
+                android:textColor="#2ea565"
+                android:textAlignment="center"
+                android:text="@string/coordinates"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/coordinates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textColor="#2ea565"
+                android:textSize="15sp" >
+            </TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_recalibrateled"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/recalibrate_led"/>
+
+         <Button
+            android:id="@+id/btn_recalibrate"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_recalibrateled"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/recalibrate"/>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_recalibrate"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/btn_continue"/>
+
+    </RelativeLayout>
+</ScrollView>

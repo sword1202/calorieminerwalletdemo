@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "843588441777",
+    "firebase_url": "https://callminer-25046.firebaseio.com",
+    "project_id": "callminer-25046",
+    "storage_bucket": "callminer-25046.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843588441777:android:b9a3b7c08016880d",
+        "android_client_info": {
+          "package_name": "com.calorieminer.minerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843588441777-e94jlg7dpoelpsj5770h4odlgdf1dion.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.calorieminer.minerapp",
+            "certificate_hash": "9c50fb9dc2dbfde0adbff658bf697c89e200d3e2"
+          }
+        },
+        {
+          "client_id": "843588441777-oke85nd4i82qf6o4f4r2r3de49evgfr5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.calorieminer.minerapp",
+            "certificate_hash": "a03bc680bbea6062300bd7a6f67660de22598980"
+          }
+        },
+        {
+          "client_id": "843588441777-qr1np6c89batijond37kai1f0p1j3b21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2HiwnRhSJ6mmGxWc7SxgabCBi_ItefdM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843588441777-qr1np6c89batijond37kai1f0p1j3b21.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

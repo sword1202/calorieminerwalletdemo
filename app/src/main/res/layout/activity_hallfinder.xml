@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dip"
+                android:layout_marginEnd="5dip"
+                android:text="@string/latitude"
+                android:textColor="#2ea565"
+                android:textSize="16sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2ea565"
+                android:textSize="16sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dip"
+                android:layout_marginEnd="5dip"
+                android:textColor="#2ea565"
+                android:text="@string/longitude"
+                android:textSize="16sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2ea565"
+                android:textSize="16sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dip"
+                android:layout_marginEnd="5dip"
+                android:textColor="#2ea565"
+                android:text="@string/timestamp"
+                android:textSize="16sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2ea565"
+                android:textSize="16sp" >
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout0"
+        android:layout_above="@id/signed_in_buttons"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <LinearLayout
+        android:id="@+id/signed_in_buttons"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="20dp">
+
+
+        <Button
+            android:id="@+id/btncontinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_continue"
+            android:onClick="onClick"
+            android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_gravity="center"
+            style="@style/ThemeOverlay.MyTextDetail"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorAccent"
+            android:text="@string/available" />
+    </LinearLayout>
+
+</RelativeLayout>

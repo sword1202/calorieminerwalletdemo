@@ -1,0 +1,3 @@
+/Users/p1/Desktop/Aneel_Work/Calminer/Calminer4 latest working/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/p1/Desktop/Aneel_Work/Calminer/Calminer4 latest working/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/p1/Desktop/Aneel_Work/Calminer/Calminer4 latest working/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/native-lib.dir

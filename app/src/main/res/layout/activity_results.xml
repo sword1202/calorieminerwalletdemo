@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_in_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/final_result"
+        android:textSize="18sp" />
+    <Space
+        android:layout_width="32dp"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="32dp"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+    <Space
+        android:layout_width="32dp"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:id="@+id/cummulativescore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <Space
+        android:layout_width="32dp"
+        android:layout_height="16dp" />
+
+    <Button
+        android:id="@+id/transcenderstarship"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/transcenderstarship" />
+
+    <Button
+        android:id="@+id/transcender"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:text="@string/transcender" />
+
+    <Button
+        android:id="@+id/fadetoblack"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fade_to_black" />
+
+    <Button
+        android:id="@+id/playagain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="@string/exit_menu" />
+
+
+</LinearLayout>
+

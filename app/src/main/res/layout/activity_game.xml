@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sign_in_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:textSize="20sp"
+        android:text="@string/yourname" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="@android:color/tab_indicator_text"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="263dp"
+        android:layout_height="18dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:textSize="20sp"
+        android:text="@string/theirname" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textColor="@android:color/tab_indicator_text"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp" />
+    <Space
+        android:layout_width="263dp"
+        android:layout_height="18dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/decreaseRoundBtn"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="@string/number_of_blinks"/>
+
+        <Button
+            android:id="@+id/decreaseRoundBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:onClick="onClick"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/round"
+            android:background="@drawable/decrease_background"/>
+
+        <TextView
+            android:id="@+id/round"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/increaseRoundBtn"
+            android:textSize="20sp"
+            android:text="@string/default_blink"/>
+
+        <Button
+            android:id="@+id/increaseRoundBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/increase_background"/>
+
+    </RelativeLayout>
+
+
+    <CheckBox
+        android:id="@+id/soundcheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/tab_indicator_text"
+        android:checked="true"
+        android:buttonTint="@android:color/tab_indicator_text"
+        android:layout_marginTop="15dp"
+        android:text="@string/sounds" />
+
+    <Button
+        android:id="@+id/button1"
+        android:onClick="onClick"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_button" />
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:onClick="onClick"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_menu" />
+
+</LinearLayout>

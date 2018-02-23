@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    android:background="#fff"
+    android:layout_marginTop="15dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messageRecyclerView_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_above="@id/bottom_layout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selection_recycler_layout"
+        android:layout_above="@id/bottom_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messageRecyclerView_selection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/inputBoxLayout">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:id="@+id/inputBoxLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/messageEditText"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/colorAccent"
+                android:imeOptions="actionDone"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="@string/btn_done"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                android:id="@+id/doneButton"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.10" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true">
+
+        <ProgressBar
+            android:id="@+id/s_progressBarForRounds"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="10"
+            android:progress="0"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

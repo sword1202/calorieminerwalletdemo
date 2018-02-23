@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/readmefile"
+        android:title="How to Play" />
+
+    <item
+        android:id="@+id/obtain_contact_menu"
+    android:title="Start Game" />
+
+    <item
+        android:id="@+id/join_game"
+        android:title="Join Game"/>
+
+    <item
+        android:id="@+id/invite_menu"
+        android:title="Send Invitation"/>
+
+    <item
+        android:id="@+id/exit_menu"
+        android:title="@string/exit_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/crash_menu"
+        android:visible="false"
+        android:title="@string/cause_crash"/>
+    <item
+        android:id="@+id/fresh_config_menu"
+        android:title="@string/fresh_config"
+        android:visible="false"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+
+    <FrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black_overlay"
+        android:layout_weight="3.5">
+        <com.calorieminer.minerapp.CustomClass.SquareSurfaceView
+            android:id="@+id/CameraView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal" />
+    </FrameLayout>
+
+    jnmy <ToggleButton
+    android:id="@+id/tbStartRecord"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:textColor="@color/white"
+    android:textSize="18dp"
+    android:textOn="Stop"
+    android:textOff="Start"
+    android:background="@drawable/recordvideo"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_weight="0.6"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:layout_weight="0.5">
+
+        <LinearLayout
+            android:id="@+id/llTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp">
+
+            <com.calorieminer.minerapp.CustomClass.CustomTextView
+                android:id="@+id/timerStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/tbCameraSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/toggle_view"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,269 @@
+<resources>
+    <string name="app_name">Calorie Miner Wallet Demo</string>
+    <string name="welcome_msg">Welcome!</string>
+    <string name="exit_menu">Exit</string>
+    <string name="contacts_permission_rationale">Access to account information is required to sign in.</string>
+    <string name="invite_menu_label">Invite</string>
+    <string name="invitation_message">TYPE YOUR (STARTERS GMAIL) HERE plus MESSAGE TO THE JOINER.</string>
+    <string name="deeplinkURL">https://play.google.com/store/apps/details?id=com.transcenderstarship.blinkadoob</string>
+    <string name="invitation_cta">Calorie Miner.</string>
+    <string name="invitation_title">Calorie Miner</string>
+    <string name="normal_error">Something went wrong.</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="ok">OK</string>
+    <string name="warning">WARNING</string>
+    <string name="terminate_app">Camera not detected. App must terminate.</string>
+
+    <!--Video Activity-->
+    <string name="elapsed_time">Elapsed time: </string>
+    <string name="view_time">Viewing time: </string>
+    <string name="frame_rate">Frame rate: </string>
+    <string name="set_timer">Set Timer: </string>
+    <string name="set_frame_rate">Set frame rate:</string>
+    <string name="fps">fps</string>
+    <string name="btn_record_session">record session</string>
+    <string name="btn_play">play video</string>
+    <string name="btn_pause">pause video playback</string>
+    <string name="btn_discard">discard video</string>
+    <string name="commit_video">commit video</string>
+    <string name="btn_resume">resume video</string>
+
+    <!--MAP Activity-->
+    <string name="not_available">GPS location not available</string>
+    <string name="available">Verified.</string>
+
+    <string name="latitude">Latitude: </string>
+    <string name="longitude">Longitute: </string>
+    <string name="timestamp">Timestamp: </string>
+    <string name="btn_continue">Continue</string>
+
+    <!--Signin Activity-->
+    <string name="no_email">You did not enter an email.</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="no_password">You did not enter a password.</string>
+    <string name="sign_loading">Signing in &#8230;</string>
+    <string name="signup_loading">Signing up &#8230;</string>
+    <string name="faile_auth">Authentication failed.</string>
+    <string name="fail_googlesign">Unexpected Google Sign-in problem. Please try again while you are logged in at https://mail.google.com.</string>
+    <string name="gps_error">Google Play Services error.</string>
+
+    <!--Obtain Activity-->
+    <string name="play_human">Play HUMAN</string>
+    <string name="play_human_wait">PLAY HUMAN - WAIT</string>
+    <string name="enter_starter_gmail">Enter Starter\'s Gmail here:</string>
+    <string name="please_enter_starter_gmail">Please enter Starter\'s Gmail.</string>
+    <string name="find_starter">FIND STARTER</string>
+    <string name="no_player">There is nobody to play Game yet.</string>
+    <string name="or">OR</string>
+    <string name="play_avatar">Play AVATAR</string>
+    <string name="wait_starter">Wait for the Starter to start the game.</string>
+    <string name="wait_game">JOIN GAME - WAIT</string>
+    <string name="starter_not_found">Starter not found. Please check with the Starter and enter their Gmail address.</string>
+    <string name="starter_found">Starter found. Please click JOIN GAME - SELECT. Then, click READY TO START when you are ready.</string>
+    <string name="join_game_select">JOIN GAME - SELECT</string>
+    <string name="playing_starter">The Starter is playing game with someone now.</string>
+    <string name="pairing_error">Unexpected pairing problem. Starter and Joiner should exit and try to pair again.</string>
+    <string name="ready_start">READY TO START</string>
+    <string name="you_starter_wait_joiner">You are the Starter.  Please wait for the Joiner to join.</string>
+    <string name="you_joiner">You are the Joiner now.</string>
+    <string name="you_starter">You are the Starter now.</string>
+    <string name="their_gmail_address">Their Gmail address:</string>
+    <string name="success_verification">Verification Successful</string>
+    <string name="email_send_reciept">Calorie Miner Receipt </string>
+    <string name="email_send_error">There are no email clients installed.</string>
+    <string name="email_text_type">plain/text</string>
+    <string name="chooser_title">Send mail &#8230;</string>
+    <string name="btn_send">SEND</string>
+    <string name="btn_done">DONE</string>
+    <string name="messages_title">Messages:</string>
+    <string name="message_title">Message:</string>
+
+
+    <!--Game Activity-->
+    <string name="yourname">Your Name:</string>
+    <string name="theirname">Their Name:</string>
+    <string name="number_of_blinks">Number of Blinks : </string>
+    <string name="default_blink">10</string>
+    <string name="sounds">Sounds</string>
+    <string name="start_button">Start</string>
+    <string name="wait">WAIT</string>
+    <string name="wait_for_starter">WAIT FOR STARTER</string>
+    <string name="min_blinks">Select a digit larger than zero.</string>
+
+    <!--Selection Activity-->
+    <string name="result_msg">Result for Block 1 of 10.</string>
+    <string name="you_had">You had: 1</string>
+    <string name="they_had">They had: 0</string>
+    <string name="you_have">"You have:</string>
+    <string name="line_break">------------------------</string>
+    <string name="they_have">They have:</string>
+    <string name="waiting_both">Waiting on: BOTH</string>
+
+    <!--Camera Activity-->
+    <string name="camera_on">OVERLAY IS ON</string>
+    <string name="camera_off">OVERLAY IS OFF</string>
+
+    <!--Result Activity-->
+    <string name="final_result">FINAL RESULTS</string>
+    <string name="transcenderstarship">TRANSCENDERSTARSHIP.COM</string>
+    <string name="transcender">TRANSCENDER.COM</string>
+    <string name="fade_to_black">Fade to Black</string>
+
+    <!--Selection Activity-->
+    <string name="same_1">1 - SAME / SEND</string>
+    <string name="same_0">0 - SAME / SEND</string>
+    <string name="same_1_wait">1 - SAME - WAIT</string>
+    <string name="same_0_wait">0 - SAME - WAIT</string>
+    <string name="different_0">0 - DIFFERENT / SEND</string>
+    <string name="different_1">1 - DIFFERENT / SEND</string>
+    <string name="different_0_wait">0 - DIFFERENT - WAIT</string>
+    <string name="different_1_wait">1 - DIFFERENT - WAIT</string>
+    <string name="waiting_you">Waiting on: YOU</string>
+    <string name="waiting_them">Waiting on: THEM</string>
+    <string name="view_result">VIEW RESULTS -></string>
+    <string name="you_win">YOU WIN</string>
+    <string name="they_win">THEY WIN</string>
+    <string name="tie">TIE</string>
+
+    <string name="sign_up">Sign up</string>
+    <string name="fresh_config">Fresh Config</string>
+    <string name="cause_crash">Cause Crash</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-4553017239348323~7368534898</string>
+    <string name="NameText">Your Name:</string>
+    <string name="video_loading">Loading Video &#8230;</string>
+    <string name="image_loading">Loading Image &#8230;</string>
+    <string name="food_loading">Loading Food &#8230;</string>
+    <string name="face_loading">Loading Data &#8230;</string>
+    <string name="goverment_id_loading">Loading Data &#8230;</string>
+    <string name="documents_loading">Loading Data &#8230;</string>
+    <string name="back_button_message">Back navigation not available for this activity. Do you want to exit?</string>
+    <string name="camera_use">Use Rear Camera?</string>
+    <string name="pin_help_button_message">The app must be uninstalled and then reinstalled to reset the PIN code. Do you want to exit?</string>
+
+    <string name="google_key">AIzaSyD1mzWyxeWzyy4g05oOcLvtUps7PpLNngg</string>
+    <string name="pin_enter">Enter PIN code:</string>
+    <string name="create_pin">Create PIN code:</string>
+    <string name="pin_1_8">PIN code must be 1 to 8 digits long.</string>
+    <string name="confirm_pin">Confirm PIN code:</string>
+    <string name="change_pin">Enter current PIN code:</string>
+    <string name="pin_1_8_confirm">Confirm PIN code</string>
+    <string name="please_wait">Please wait &#8230;</string>
+    <string name="pin_error">Pin code error</string>
+    <string name="random_key_error">Random key error</string>
+    <string name="pincode_error">Wrong PIN code</string>
+
+    <string name="extra_text">Receipt files from Calorie Miner:</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="label_google_sign_in">Firebase + Google Sign In</string>
+    <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>
+
+    <string name="label_facebook_login">Firebase + Facebook Login</string>
+    <string name="desc_facebook_login">Use a Facebook Login credential to authenticate with Firebase.</string>
+
+    <string name="label_twitter_login">Firebase + Twitter Login</string>
+    <string name="desc_twitter_login">Use a Twitter Login credential to authenticate with Firebase.</string>
+
+    <string name="label_emailpassword">Email/Password Authentication</string>
+    <string name="desc_emailpassword">Use an email and password to authenticate with Firebase.</string>
+
+    <string name="label_phone_auth">Phone Number Authentication</string>
+    <string name="desc_phone_auth">Use a phone number to authenticate with Firebase.</string>
+
+    <string name="label_anonymous_auth">Anonymous Authentication</string>
+    <string name="desc_anonymous_auth">Sign in anonymously and then later upgrade to a full Firebase Auth user.</string>
+
+    <string name="label_custom_auth">Custom Authentication</string>
+    <string name="desc_custom_auth">Use a custom token signed by your own server to authenticate with Firebase.</string>
+
+    <string name="label_firebase_ui">FirebaseUI Auth</string>
+    <string name="desc_firebase_ui">Use the FirebaseUI-Android library to authenticate with Firebase.</string>
+
+    <string name="hint_user_id">User ID</string>
+    <string name="get_custom_token">Get Token</string>
+    <string name="sign_in">A Gmail account is required to sign in.</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Loading…</string>
+    <string name="custom_token">Custom Token</string>
+    <string name="signed_in">Logged in !</string>
+    <string name="signed_out">Please authenticate the phone:</string>
+    <string name="token_null">Token: null</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="start_phone_auth">Login</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="status_code_sent">Code Sent</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+    <string name="bundle_fps_value">fps_value</string>
+
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+
+    <string name="facebook_status_fmt">Facebook User: %s</string>
+    <string name="facebook_title_text">Facebook Login</string>
+
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+
+    <string name="phone_title_text">Phone Number</string>
+
+    <string name="twitter_status_fmt">Twitter User: %s</string>
+    <string name="twitter_title_text">Twitter Login</string>
+
+    <string name="firebaseui_status_fmt">Firebase User: %s</string>
+    <string name="firebaseui_title_text">FirebaseUI Auth</string>
+
+    <string name="id_fmt">User ID: %s</string>
+    <string name="email_fmt">Email: %s</string>
+    <string name="profile_name"><u>Name</u></string>
+    <string name="profile_email"><u>Email</u></string>
+    <string name="profile_phone"><u>Phone</u></string>
+    <string name="session_video"><u>Session Video</u></string>
+    <string name="profile_lat_lon"><u>GPS</u></string>
+    <string name="profile_gpstimestamp"><u>GPS Timestamp</u></string>
+    <string name="analysispicture"><u>Picture of Face</u></string>
+    <string name="score">SCORE: PENDING</string>
+    <string name="analysisfood"><u>Picture of Food</u></string>
+
+    <!--remoteconfig default values-->
+    <string name="min_fps">0.01</string>
+    <string name="max_fps">29</string>
+    <string name="min_timer">1</string>
+    <string name="max_timer">999</string>
+    <string name="map_location_enabled">true</string>
+
+    <string name="btn_take_picture">TAKE PICTURE OF FACE</string>
+    <string name="btn_accredation">ACCREDATION</string>
+    <string name="btn_take_food">TAKE PICTURE OF FOOD</string>
+    <string name="btn_start_mining">START MINING</string>
+    <string name="btn_change_pin">change pin code</string>
+    <string name="btn_play_winbit">play winbit</string>
+    <string name="btn_remove_pin">remove pin code</string>
+    <string name="btn_email">email files</string>
+    <string name="btn_chat">CHAT WITH FRIENDS</string>
+
+<string name="image_picker_error">Something is wrong with that image. Pick a different one please.</string>
+    <string name="sha_256_message_hash">SHA-256 Message Hash</string>
+    <string name="calibrate_tracking">CALIBRATE TRACKING</string>
+    <string name="coordinates">Coordinates:</string>
+    <string name="recalibrate">RECALIBRATE</string>
+    <string name="calibration"><u>Calibration</u></string>
+    <string name="recalibrate_led">RECALIBRATE - LED</string>
+    <string name="claim_caloriecoins">CLAIM CALORIECOINS</string>
+</resources>

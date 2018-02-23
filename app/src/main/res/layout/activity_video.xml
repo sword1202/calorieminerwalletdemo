@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:id="@+id/scroll_view"
+    android:background="#0000"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleid"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dp"
+            android:textColor="#2ea565"
+            android:textAlignment="center"
+            android:text="@string/session_video"
+            android:textSize="16sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/videolayout"
+            android:layout_width="240dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/titleid">
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                />
+            <ImageView
+                android:id="@+id/thumbnail_img"
+                android:scaleType="fitXY"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/video_rounded_corners"
+                >
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/statuslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videolayout"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dip">
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/coreitem_center"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/elapsedTime_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/coreitem_center"
+                android:textColor="#2ea565"
+                android:layout_marginEnd="5dp"
+                android:textAlignment="textEnd"
+                android:layout_alignParentStart="true"
+                android:text="@string/elapsed_time"
+                android:textSize="16sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/elapsedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@id/coreitem_center"
+                android:textAlignment="textStart"
+                android:textColor="#2ea565"
+                android:textSize="16sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/runningTime_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/elapsedTime"
+                android:layout_alignEnd="@id/elapsedTime_title"
+                android:textColor="#2ea565"
+                android:textAlignment="textEnd"
+                android:layout_alignParentStart="true"
+                android:text="@string/view_time"
+                android:textSize="16sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/runningTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/elapsedTime"
+                android:textAlignment="textStart"
+                android:layout_below="@id/elapsedTime"
+                android:textColor="#2ea565"
+                android:textSize="16sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/frameRate_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frame_rate"
+                android:textAlignment="textEnd"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@id/elapsedTime_title"
+                android:layout_below="@id/runningTime"
+                android:textColor="#2ea565"
+                android:textSize="16sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/frameRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/elapsedTime"
+                android:textAlignment="textStart"
+                android:layout_below="@id/runningTime"
+                android:textColor="#2ea565"
+                android:textSize="16sp" >
+            </TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/timerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statuslayout"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/TextView00"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dip"
+                android:gravity="center"
+                android:layout_toStartOf="@id/coreitem1"
+                android:text="@string/set_timer"
+                android:textColor="#000"
+                android:textSize="20sp" >
+            </TextView>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/coreitem1"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                android:id="@+id/decreaseTimeBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:layout_marginTop="2.5dp"
+                android:layout_alignEnd="@id/TextView01"
+                android:onClick="onClick"
+                android:background="@drawable/decrease_background"/>
+
+            <EditText
+                android:id="@+id/timer_value"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:layout_toEndOf="@id/decreaseTimeBtn"
+                android:background="@drawable/edittext_border">
+            </EditText>
+
+            <Button
+                android:id="@+id/increaseTimeBtn"
+                android:layout_width="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:layout_marginTop="2.5dp"
+                android:layout_toRightOf="@id/timer_value"
+                android:onClick="onClick"
+                android:background="@drawable/increase_background"/>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/set_frame_rate"
+                android:gravity="fill_horizontal"
+                android:layout_alignStart="@id/TextView00"
+                android:layout_alignBaseline="@id/fps_value"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/fps_value"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:layout_alignStart="@id/timer_value"
+                android:layout_below="@id/timer_value"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_border"/>
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text=""
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/fps_value"
+                android:layout_alignBaseline="@id/fps_value"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/record_session"
+            android:onClick="onClick"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_record_session"
+            android:layout_marginStart="100dp"
+            android:layout_below="@id/timerlayout"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/play_video"
+            android:onClick="onClick"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_play"
+            android:layout_marginStart="100dp"
+            android:layout_below="@id/record_session"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/pause_video_playback"
+            android:onClick="onClick"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_pause"
+            android:layout_marginStart="100dp"
+            android:layout_below="@id/play_video"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/discard_video"
+            android:onClick="onClick"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_discard"
+            android:layout_marginStart="100dp"
+            android:layout_below="@id/pause_video_playback"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/commit_video"
+            android:onClick="onClick"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/claim_caloriecoins"
+            android:layout_marginStart="100dp"
+            android:layout_below="@id/discard_video"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/continue_video"
+            android:onClick="onClick"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_continue"
+            android:visibility="gone"
+            android:layout_marginStart="100dp"
+            android:layout_below="@id/commit_video"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+

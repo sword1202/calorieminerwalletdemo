@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/selectionlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/s_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/you_have"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/s_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/s_textView99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/line_break"/>
+
+        <TextView
+            android:id="@+id/s_textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/they_have"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/s_button1"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/s_button2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/s_button3"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="32dp"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/s_textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/watingwhotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waiting_both"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectionlayout"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2ea565"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/message_title"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:background="#0000"
+    android:scrollbars="vertical">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000">
+
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#2ea565"
+            android:textSize="20sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/name_textView"
+            android:id="@+id/pictureLayout">
+
+            <com.calorieminer.minerapp.VisionPackage.GraphicOverlayView
+                android:layout_width="240dp"
+                android:layout_height="320dp"
+                android:id="@+id/imageView_selfie"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"/>
+
+            <CheckBox
+                android:id="@+id/overlaycheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingRight="10dp"
+                android:background="#2ea565"
+                android:layout_below="@id/imageView_selfie"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:checked="true"
+                android:visibility="gone"
+                android:buttonTint="#fff"
+                android:layout_marginTop="5dp"
+                android:text="OVERLAY IS ON" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pictureLayout"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:textColor="#2ea565"
+                    android:textAlignment="center"
+                    android:id="@+id/phone_title"
+                    android:text="@string/profile_phone"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#2ea565"
+                    android:textSize="16sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:textColor="#2ea565"
+                    android:textAlignment="center"
+                    android:text="@string/profile_email"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#2ea565"
+                    android:textSize="16sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:textColor="#2ea565"
+                    android:id="@+id/gps_title"
+                    android:textAlignment="center"
+                    android:text="@string/profile_lat_lon"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/latlonTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#2ea565"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/gpstimestamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#2ea565"
+                    android:textSize="16sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutpictureanalysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dip"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dip"
+                    android:layout_marginEnd="5dip"
+                    android:id="@+id/pictureAnalysisTitle"
+                    android:textColor="#2ea565"
+                    android:textAlignment="center"
+                    android:text="@string/analysispicture"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <!--Face Annotations-->
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="#fff"
+                    android:id="@+id/face_detect_listView"
+                    android:dividerHeight="2dp"/>
+
+                <!--Label Annotations-->
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="#fff"
+                    android:id="@+id/label_listView"
+                    android:dividerHeight="2dp"/>
+
+                <TextView
+                    android:id="@+id/result_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:text="@string/score"
+                    android:textColor="#1bb545"
+                    android:textSize="20sp" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutfoodanalysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dip"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:id="@+id/foodAnalysisTitle"
+                    android:textColor="#2ea565"
+                    android:textAlignment="center"
+                    android:text="@string/analysisfood"
+                    android:textSize="16sp" >
+                </TextView>
+                
+                <com.calorieminer.minerapp.VisionPackage.GraphicOverlayView
+                    android:layout_width="240dp"
+                    android:layout_height="320dp"
+                    android:id="@+id/imgView_food"
+                    android:layout_marginTop="10dp"
+                    android:background="#e0e"
+                    android:layout_gravity="center_horizontal"/>
+
+                <!--Food Annotations-->
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="#fff"
+                    android:id="@+id/food_label_listView"
+                    android:dividerHeight="2dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/camerabutton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/btn_take_picture"/>
+
+        <Button
+            android:id="@+id/foodbutton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/camerabutton"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/btn_take_food"/>
+
+        <Button
+            android:id="@+id/accredited_investor_portal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foodbutton"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/btn_accredation"/>
+
+        <Button
+            android:id="@+id/btnstartmining"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accredited_investor_portal"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/btn_start_mining"/>
+
+        <Button
+            android:id="@+id/email_files"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnstartmining"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/btn_email"/>
+
+        <Button
+            android:id="@+id/start_chat"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_files"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/btn_chat"/>
+
+        <Button
+            android:id="@+id/createpincode"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_chat"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="create pin code"/>
+
+        <Button
+            android:id="@+id/removepincode"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/createpincode"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/btn_remove_pin"/>
+
+        <Button
+            android:id="@+id/changepincode"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/removepincode"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/btn_change_pin"/>
+
+        <Button
+            android:id="@+id/btncontinue"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/changepincode"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/btn_play_winbit"/>
+
+
+        <Button
+            android:id="@+id/btntrack"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btncontinue"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/ThemeOverlay.MyDarkButton"
+            android:text="@string/calibrate_tracking"/>
+
+    </RelativeLayout>
+</ScrollView>
